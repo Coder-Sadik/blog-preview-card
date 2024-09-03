@@ -11,10 +11,12 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 }
 p {
 	font-size: 16px;
 	line-height: 24px;
+	font-weight: 500;
 }
 .card {
 	background-color: hsl(0, 0%, 100%);
@@ -25,7 +27,7 @@ p {
 	gap: 20px;
 	max-width: 400px;
 	border: 2px solid black;
-	box-shadow: 8px 8px 0px 0px black;
+	box-shadow: 8px 8px 0px 0px hsl(0, 0%, 7%);
 }
 .card img {
 	width: 100%;
@@ -33,11 +35,10 @@ p {
 }
 .btn-learn {
 	background-color: hsl(47, 88%, 63%);
-	border-radius: 10px;
+	border-radius: 5px;
 	border: none;
 	padding: 8px 12px;
 	max-width: fit-content;
-	font-size: 16px;
 	cursor: pointer;
 }
 .btn-learn,
@@ -45,7 +46,9 @@ p {
 .heading {
 	font-weight: 800;
 	white-space: nowrap;
+	color: hsl(0, 0%, 7%);
 }
+
 .description {
 	color: hsl(0, 0%, 42%);
 }
@@ -56,4 +59,20 @@ p {
 }
 .avatar img {
 	width: 40px;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+	color: hsl(0, 0%, 40%);
+	margin: 20px;
+	width: 100%;
+	max-width: 400px;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+	text-decoration: none;
+	color: hsl(0, 0%, 100%);
+	white-space: nowrap;
 }
